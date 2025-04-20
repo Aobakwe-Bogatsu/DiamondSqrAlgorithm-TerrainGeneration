@@ -20,26 +20,27 @@ This Unity-based project demonstrates terrain generation using the **Diamond-Squ
 
 ## 📁 Project Folder
 
-The Unity project folder is zipped and included as:
-`DiamondSquare TerrainGeneration.zip`
+  The Unity project could not be uploaded as a single zipped folder due to size or platform limitations. Instead, all essential folders and files from the Unity project have been uploaded individually. These include:
 
-It contains all essential Unity folders:
-- `Assets` (contains the `Scripts/` folder with `DiamondSquare.cs`)
-- `Library`
-- `ProjectSettings`
-- `Packages`
+- `Assets/` (contains the `Scripts/` folder with `DiamondSquare.cs`)
+- `Packages/`
+- `ProjectSettings/`
+- `.vsconfig`
+- `.gitignore`
+
+  This structure mirrors a standard Unity project setup and can be opened directly in Unity. The .gitignore file is placed at the root of the project to ensure Git correctly ignores unnecessary or generated files (like /Library/, /Temp/, and .csproj files).
 
 ---
 
 ## 🛠️ How to Run the Project
 
-1. **Unzip** the `DiamondSquare TerrainGeneration.zip`.
+1.Ensure all uploaded folders and files (`Assets/`, `Packages/`, `ProjectSettings/`, `.vsconfig`, .`gitignore`) are placed inside a single parent folder (e.g., `DiamondSquare TerrainGeneration/`).
 2. Open Unity Hub.
 3. Click `Add Project` or `Open`.
-4. Navigate to the unzipped folder and select it.
+4. Navigate to the folder containing the uploaded files and select it.
 5. Unity will open the project — wait for it to load the environment and assets.
 
-6. Press the **play icon** to start the project - the food prefabs will start spawning.
+6. Press the **play icon** in the Unity Editor to run the project - the food prefabs will start spawning.
 7. Press the **spacebar key** to generate new terrains.
 
 ---
