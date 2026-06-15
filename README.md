@@ -1,12 +1,12 @@
 # DiamondSquareAlgorithm-TerrainGeneration
 
-## 📖 Project Overview
+## Project Overview
 
 This Unity-based project demonstrates terrain generation using the **Diamond-Square Algorithm**, with dynamic prefab spawning. Users can generate new terrains by pressing the spacebar, and the system simulates physics-driven spawning of "food objects" (represented as yellow cubes) above the generated terrain.
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
 ✔️ Procedural terrain generation using Diamond-Square Algorithm  
 ✔️ Spacebar key interaction to generate a new terrain  
@@ -18,9 +18,9 @@ This Unity-based project demonstrates terrain generation using the **Diamond-Squ
 
 ---
 
-## 📁 Project Folder
+## Project Folder
 
-  The Unity project could not be uploaded as a single zipped folder due to size or platform limitations. Instead, all essential folders and files from the Unity project have been uploaded individually. These include:
+ All essential folders and files from the Unity project have been uploaded individually. These include:
 
 - `Assets/` (contains the `Scripts/` folder with `DiamondSquare.cs`)
 - `Packages/`
@@ -32,25 +32,25 @@ This Unity-based project demonstrates terrain generation using the **Diamond-Squ
 
 ---
 
-## 🛠️ How to Run the Project
+## How to Run the Project
 
 1.Ensure all uploaded folders and files (`Assets/`, `Packages/`, `ProjectSettings/`, `.vsconfig`, .`gitignore`) are placed inside a single parent folder (e.g., `DiamondSquare TerrainGeneration/`).
 2. Open Unity Hub.
 3. Click `Add Project` or `Open`.
 4. Navigate to the folder containing the uploaded files and select it.
-5. Unity will open the project — wait for it to load the environment and assets.
+5. Unity will open the project - wait for it to load the environment and assets.
 
 6. Press the **play icon** in the Unity Editor to run the project - the food prefabs will start spawning.
 7. Press the **spacebar key** to generate new terrains.
 
 ---
 
-## 💡 How It Works
+## How It Works
 
 # Terrain Generation #
 
 - The core of terrain generation lies in `DiamondSquare.cs`:
-- The `Diamond-Square algorithm` starts with randomized corner values.
+- The `Diamond-Square algorithm` starts with randomised corner values.
 - Through recursive "diamond" and "square" steps, it smooths the terrain.
 - The result is a natural-looking heightmap applied to Unity's terrain object.
 
@@ -63,7 +63,7 @@ In `Update()`:
 
 ---
 
-## 🔍 Code Structure
+## Code Structure
 
 # `DiamondSquare.cs` Script Summary #
 
@@ -73,22 +73,22 @@ Contains full logic for:
 - Handling user input (spacebar).
 - `ExecuteDiamondSquare()` – runs the terrain algorithm.
 - `Update()` – handles prefab spawning logic and spacebar detection.
-- `Reset()` – initializes corner values for terrain generation.
+- `Reset()` – initialises corner values for terrain generation.
 
 For detailed code, check the script in:
 `Assets/Scripts/DiamondSquare.cs`
 
 ---
 
-## 🧱 Unity Project Setup – Inspector Configuration
-# 🎯 DiamondSquare Script Requirements #
+## Unity Project Setup – Inspector Configuration
+# DiamondSquare Script Requirements #
 The `DiamondSquare.cs` script is attached to a `Terrain GameObject` in the scene.
 
 Make sure the following components and properties are configured correctly:
 
 # 1. Terrain GameObject #
 - Component: `Terrain`
-- Component: `Terrain Collider` ✅ (Required)
+- Component: `Terrain Collider` (Required)
 - Attached Script: `DiamondSquare.cs`
 - Set script fields in Inspector:
   - `Range Reduction Value`: **0.55** (controls terrain smoothness)
@@ -99,8 +99,8 @@ Make sure the following components and properties are configured correctly:
 
 # 2. Food Prefab (Yellow Cube) #
 - Includes the following components:
-  - `Box Collider` ✅ (enables collision detection)
-  - `Rigidbody` ✅ (enable gravity)
+  - `Box Collider` (enables collision detection)
+  - `Rigidbody` (enable gravity)
     - Make sure **Use Gravity** is checked
 
 # 3. Scene Setup #
@@ -110,17 +110,17 @@ Make sure the following components and properties are configured correctly:
 
 ---
 
-## 🧠 Code Summary
+## Code Summary
 
 The main logic resides in:  
 `Assets/Scripts/DiamondSquare.cs`
 
-### 🗺️ Terrain Generation
+### Terrain Generation
 - Runs **Diamond-Square Algorithm**
 - Assigns random heights to corners
 - Recalculates midpoints recursively to create a natural landscape
 
-### 🍽️ Food Spawning
+### Food Spawning
 - Spawns 10 prefabs every 2 seconds until 50 max
 - Spawns above terrain (Y = 100), falls due to gravity
 - Debug message shown when max is reached
@@ -129,21 +129,21 @@ Press **Spacebar** at any time to generate a fresh terrain.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 - screenshot of terrain and prefab spawning:
 
 ![scene](scene.png)
 
 ---
 
-## 💿 Software
+## Software
 
 - Unity (Recommended version: Unity 2021.3+)
 - Visual Studio or any C# IDE
 
 ---
 
-## 🙋‍♂️ Author
+## Author
 
 **Aobakwe Bogatsu**  
 Computer Systems Engineering Student
